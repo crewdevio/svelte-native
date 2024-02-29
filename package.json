@@ -9,8 +9,8 @@
     "sync": "npx cap sync",
     "open:xcode": "npx cap open ios",
     "open:android-studio": "npx cap open android",
-    "run:ios": "npx cap run ios",
-    "run:android": "npx cap run android"
+    "start:ios": "npx cap run ios",
+    "start:android": "npx cap run android"
   },
   "devDependencies": {
     "@capacitor/cli": "^5.7.0",

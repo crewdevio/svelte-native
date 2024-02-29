@@ -1,47 +1,107 @@
-# Svelte + TS + Vite
+# Svelte Native
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+This template allows you to create native applications for Android and iOS using svelte, tailwind, capacitor, konsta UI.
 
-## Recommended IDE Setup
+## Get started
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+basic requirements for web development:
 
-## Need an official Svelte framework?
+- [nodejs](https://nodejs.org/en) >= 20
+- [pnpm](https://pnpm.io/) >= 8
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+for ios development:
 
-## Technical considerations
+- [Xcode](https://developer.apple.com/xcode/)
+- [CocoaPods](https://cocoapods.org)
 
-**Why use this over SvelteKit?**
+> **Note**: iOS 13+ is supported. Xcode 14.1+ is required (see Environment Setup). Capacitor uses WKWebView, not the deprecated UIWebView.
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+for android development:
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- [Android Studio](https://developer.android.com/studio)
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+> **Note**: API 22+ (Android 5.1 or later) is supported, which represents over 99% of the Android market. Capacitor requires an Android WebView with Chrome version 60 or later. On Android 5-6, and 10+ Capacitor uses the Android System WebView. On Android 7-9, Google Chrome provides the WebView.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## Development
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+first use `template` or `clone` or `fork` this repo:
 
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from "svelte/store";
-export default writable(0);
+```console
+npx degit crewdevio/svelte-native my-app
 ```
+
+install all dependencies:
+
+```console
+pnpm install
+```
+
+start web project:
+
+```console
+pnpm run dev
+```
+
+### Open App in ios emulator
+
+compile the frontend first:
+
+```console
+pnpm run build
+```
+
+then sync the code with ios/android
+
+```console
+pnpm run sync
+```
+
+run the project in the emulator:
+
+```console
+pnpm run start:ios
+```
+
+### Open App in android emulator
+
+compile the frontend first:
+
+```console
+pnpm run build
+```
+
+then sync the code with ios/android
+
+```console
+pnpm run sync
+```
+
+run the project in the emulator:
+
+```console
+pnpm run start:android
+```
+
+## FAQ
+
+- Official Platforms
+
+  `iOS 13+`
+  `Android 5.1+ (Requires Chrome WebView 60+)`
+  `Modern Web Browsers like: Chrome, Firefox, Safari, Edge`
+
+- [Custom Native iOS Code](https://capacitorjs.com/docs/ios/custom-code)
+
+- [Custom Native Android Code](https://capacitorjs.com/docs/android/custom-code)
+
+- [Deploying your Capacitor iOS App to the App Store](https://capacitorjs.com/docs/ios/deploying-to-app-store)
+
+- [Deploying your Capacitor Android App to the Google Play Store](https://capacitorjs.com/docs/android/deploying-to-google-play)
+
+- [Official Plugins](https://capacitorjs.com/docs/plugins)
+
+- [Capacitor iOS API](https://capacitorjs.com/docs/core-apis/ios)
+
+- [Capacitor Android API](https://capacitorjs.com/docs/core-apis/android)
+
+- [Capacitor Web API](https://capacitorjs.com/docs/core-apis/web)
