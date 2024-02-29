@@ -1,0 +1,11 @@
+{
+  "appId": "com.svelte.native",
+  "appName": "svelte-native",
+  "bundledWebRuntime": true,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1000
+    }
+  }
+}

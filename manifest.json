@@ -1,0 +1,9 @@
+{
+  "name": "Svelte Native",
+  "short_name": "App",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [],
+  "background_color": "#ffff",
+  "theme_color": "#ffff"
+}
