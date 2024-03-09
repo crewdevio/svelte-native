@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Router, Route } from "svelte-routing";
   import { ModeWatcher } from "mode-watcher";
+  import View from "@/views/View.svelte";
+  import Home from "@/views/Home.svelte";
   import { App } from "konsta/svelte";
-  import Home from "$lib/Home.svelte";
-  import View from "$lib/View.svelte";
 
   let theme: "material" | "ios" = "ios";
 </script>

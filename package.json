@@ -10,7 +10,8 @@
     "open:xcode": "npx cap open ios",
     "open:android-studio": "npx cap open android",
     "start:ios": "npx cap run ios",
-    "start:android": "npx cap run android"
+    "start:android": "npx cap run android",
+    "ui:add": "pnpx shadcn-svelte@latest add"
   },
   "devDependencies": {
     "@capacitor/cli": "^5.7.0",
@@ -32,8 +33,12 @@
     "@capacitor/ios": "^5.7.0",
     "@capacitor/splash-screen": "^5.0.7",
     "@ionic/pwa-elements": "^3.2.2",
+    "clsx": "^2.1.0",
     "konsta": "^3.1.2",
     "mode-watcher": "^0.2.1",
-    "svelte-routing": "^2.12.0"
+    "svelte-radix": "^1.0.3",
+    "svelte-routing": "^2.12.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwind-variants": "^0.2.0"
   }
 }

@@ -1,7 +1,6 @@
 import { defineCustomElements } from "@ionic/pwa-elements/loader";
 import App from "./App.svelte";
-
-import "./app.css";
+import "./app.pcss";
 
 defineCustomElements(window);
 
