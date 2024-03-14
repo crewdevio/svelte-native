@@ -17,8 +17,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "$lib/*": ["./src/lib/*"],
-      "$assets/*": ["./src/assets/*"],
-      "$utils/*": ["./src/utils/*"]
+      "$components/*": ["./src/lib/components/ui/*"],
+      "$assets/*": ["./src/assets/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

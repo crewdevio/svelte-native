@@ -16,12 +16,20 @@ export default defineConfig({
         replacement: fileURLToPath(new URL("./src/lib", import.meta.url)),
       },
       {
+        find: "$components",
+        replacement: fileURLToPath(
+          new URL("./src/lib/components/ui", import.meta.url)
+        ),
+      },
+      {
         find: "$assets",
         replacement: fileURLToPath(new URL("./src/assets", import.meta.url)),
       },
       {
         find: "$utils",
-        replacement: fileURLToPath(new URL("./src/utils", import.meta.url)),
+        replacement: fileURLToPath(
+          new URL("./src/lib/utils.ts", import.meta.url)
+        ),
       },
     ],
   },
