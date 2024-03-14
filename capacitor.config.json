@@ -1,5 +1,5 @@
 {
-  "appId": "com.svelte.native",
+  "appId": "com.svelte.app",
   "appName": "svelte-native",
   "bundledWebRuntime": true,
   "webDir": "dist",
