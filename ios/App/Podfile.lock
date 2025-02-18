@@ -1,34 +1,34 @@
 PODS:
-  - Capacitor (5.7.8):
+  - Capacitor (7.0.1):
     - CapacitorCordova
-  - CapacitorCamera (5.0.10):
+  - CapacitorCamera (7.0.0):
     - Capacitor
-  - CapacitorCordova (5.7.8)
-  - CapacitorSplashScreen (5.0.8):
+  - CapacitorCordova (7.0.1)
+  - CapacitorSplashScreen (7.0.0):
     - Capacitor
 
 DEPENDENCIES:
-  - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@5.7.8_@capacitor+core@5.7.8/node_modules/@capacitor/ios`)"
-  - "CapacitorCamera (from `../../node_modules/.pnpm/@capacitor+camera@5.0.10_@capacitor+core@5.7.8/node_modules/@capacitor/camera`)"
-  - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@5.7.8_@capacitor+core@5.7.8/node_modules/@capacitor/ios`)"
-  - "CapacitorSplashScreen (from `../../node_modules/.pnpm/@capacitor+splash-screen@5.0.8_@capacitor+core@5.7.8/node_modules/@capacitor/splash-screen`)"
+  - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@7.0.1_@capacitor+core@7.0.1/node_modules/@capacitor/ios`)"
+  - "CapacitorCamera (from `../../node_modules/.pnpm/@capacitor+camera@7.0.0_@capacitor+core@7.0.1/node_modules/@capacitor/camera`)"
+  - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@7.0.1_@capacitor+core@7.0.1/node_modules/@capacitor/ios`)"
+  - "CapacitorSplashScreen (from `../../node_modules/.pnpm/@capacitor+splash-screen@7.0.0_@capacitor+core@7.0.1/node_modules/@capacitor/splash-screen`)"
 
 EXTERNAL SOURCES:
   Capacitor:
-    :path: "../../node_modules/.pnpm/@capacitor+ios@5.7.8_@capacitor+core@5.7.8/node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@7.0.1_@capacitor+core@7.0.1/node_modules/@capacitor/ios"
   CapacitorCamera:
-    :path: "../../node_modules/.pnpm/@capacitor+camera@5.0.10_@capacitor+core@5.7.8/node_modules/@capacitor/camera"
+    :path: "../../node_modules/.pnpm/@capacitor+camera@7.0.0_@capacitor+core@7.0.1/node_modules/@capacitor/camera"
   CapacitorCordova:
-    :path: "../../node_modules/.pnpm/@capacitor+ios@5.7.8_@capacitor+core@5.7.8/node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@7.0.1_@capacitor+core@7.0.1/node_modules/@capacitor/ios"
   CapacitorSplashScreen:
-    :path: "../../node_modules/.pnpm/@capacitor+splash-screen@5.0.8_@capacitor+core@5.7.8/node_modules/@capacitor/splash-screen"
+    :path: "../../node_modules/.pnpm/@capacitor+splash-screen@7.0.0_@capacitor+core@7.0.1/node_modules/@capacitor/splash-screen"
 
 SPEC CHECKSUMS:
-  Capacitor: 747aadb4fa786f460d8cd9d0557cb81440a13747
-  CapacitorCamera: d333715364b5d85422c627aae6db87ef6161352c
-  CapacitorCordova: 31ab98dca2ddcee051027a1afe7e8c85c82f7297
-  CapacitorSplashScreen: 7a69e693bc1ef83e4bd3fb073bd8c8fa33e9059e
+  Capacitor: 23fff43571a4d1e3ee7d67b5a3588c6e757c2913
+  CapacitorCamera: 777ddf61d727754fcda0b92303ae09ea3765d7b7
+  CapacitorCordova: 63d476958d5022d76f197031e8b7ea3519988c64
+  CapacitorSplashScreen: f4e58cc02aafd91c7cbaf32a3d1b44d02a115125
 
-PODFILE CHECKSUM: 7979079e7318fe08e3f4d3a92691151f70fd9219
+PODFILE CHECKSUM: 2e9945e8b5aa4f21a82c2f981da73703acd0f4ab
 
 COCOAPODS: 1.15.2
